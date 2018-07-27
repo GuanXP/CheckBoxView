@@ -44,9 +44,15 @@ public class CheckBoxView : UIView {
     @objc
     private func onTapped() {
         if self.isEnabled {
-            isChecked = !isChecked
-            
-            delegate?.didTapCheckBox(sender: self)
+            if self.isRadio {
+                if !isChecked {
+                    isChecked = true
+                    delegate?.didTapCheckBox(sender: self)
+                }
+            } else {
+                isChecked = !isChecked
+                delegate?.didTapCheckBox(sender: self)
+            }
         }
     }
     
