@@ -108,13 +108,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3A-9Z-fBg">
-                                <rect key="frame" x="-1" y="626" width="376" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="To4-Pl-dTM" customClass="CheckBoxView" customModule="CheckBoxView" customModuleProvider="target">
                                 <rect key="frame" x="-1" y="147" width="375" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -123,6 +116,9 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="Text on left with large font"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isChecked" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isTextOnRight" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
