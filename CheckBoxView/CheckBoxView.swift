@@ -168,15 +168,15 @@ public class CheckBoxView : UIView {
             context.setFillColor(color)
             context.fillEllipse(in: circleRect)
             
-            let inner = circleRect.insetBy(dx: circleRect.width/6, dy: circleRect.width/6).offsetBy(dx: 0, dy: -circleRect.width/12)
+            let inner = circleRect.insetBy(dx: circleRect.width/3, dy: circleRect.width/3)
             
             context.setStrokeColor(UIColor.white.cgColor)
-            context.setLineWidth(fsize/6)
+            context.setLineWidth(fsize/8)
             context.setLineCap(CGLineCap.round)
             context.beginPath()
             context.move(to: CGPoint(x:inner.minX, y:inner.midY + inner.width/8))
             context.addLine(to: CGPoint(x: inner.midX, y: inner.maxY))
-            context.addLine(to: CGPoint(x: inner.maxX, y: inner.midY - inner.width/4))
+            context.addLine(to: CGPoint(x: inner.maxX, y: inner.midY - inner.width/3))
             context.strokePath()
         } else {
             context.setStrokeColor(color)
